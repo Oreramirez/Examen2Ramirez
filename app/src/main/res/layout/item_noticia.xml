@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="514dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tituloId"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textAlignment="gravity"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="Titulo de noticia "
+            android:textColor="@color/colorTitulo"
+            android:textSize="16sp"
+        />
+
+        <ImageView
+            android:id="@+id/imageViewId"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="81dp"
+            app:srcCompat="@drawable/imagen"
+        />
+
+        <TextView
+            android:id="@+id/fechaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageViewId"
+            android:text="Fecha de noticia"
+            android:textColor="@color/colorFecha"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/descripcionId"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageViewId"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="24dp"
+            android:text="Descripcion de la noticia"
+            android:textColor="@color/colorDescripcion" />
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
